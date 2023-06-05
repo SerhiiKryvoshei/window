@@ -1,0 +1,23 @@
+{
+	"name": "window",
+	"source": "src/index.html",
+	"version": "1.0.0",
+	"description": "",
+	"scripts": {
+		"start": "parcel src/index.html --open",
+		"build": "parcel build src/index.html --dist-dir dist"
+	},
+	"author": "",
+	"license": "ISC",
+	"browserslist": [
+		"> 1%",
+		"not dead"
+	],
+	"devDependencies": {
+		"parcel": "^2.9.1"
+	},
+	"dependencies": {
+		"jquery": "^3.7.0",
+		"slick-carousel": "^1.8.1"
+	}
+}
