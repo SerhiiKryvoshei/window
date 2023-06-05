@@ -22,3 +22,8 @@ When you click on the cross or backing - disappear.
 The modal window (class popup) should be called
 When you click on the cross or backing - disappear.
 
+## 10. If the user is on the page for more than 60 seconds
+
+A modal window (popup) should appear.
+If you click on the cross or the substrate, the window disappears.
+
