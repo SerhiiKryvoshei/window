@@ -1,11 +1,14 @@
 {
 	"name": "window",
 	"source": "src/index.html",
+	"homepage": "https://serhiikryvoshei.github.io/window",
 	"version": "1.0.0",
 	"description": "",
 	"scripts": {
+		"predeploy": "npm run build",
+		"deploy": "gh-pages -d build",
 		"start": "parcel src/index.html --open",
-		"build": "parcel build src/index.html --dist-dir dist"
+		"build": "parcel build src/index.html --dist-dir build"
 	},
 	"author": "",
 	"license": "ISC",
@@ -14,6 +17,7 @@
 		"not dead"
 	],
 	"devDependencies": {
+		"gh-pages": "^5.0.0",
 		"parcel": "^2.9.1"
 	},
 	"dependencies": {
@@ -21,3 +25,4 @@
 		"slick-carousel": "^1.8.1"
 	}
 }
+
