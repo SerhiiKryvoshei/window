@@ -1,14 +1,13 @@
 {
 	"name": "window",
 	"source": "src/index.html",
-	"homepage": "https://serhiikryvoshei.github.io/window",
 	"version": "1.0.0",
 	"description": "",
 	"scripts": {
 		"predeploy": "npm run build",
 		"deploy": "gh-pages -d build",
-		"start": "parcel src/index.html --open",
-		"build": "parcel build src/index.html --dist-dir build"
+		"start": "parcel --open",
+		"build": "parcel build --dist-dir build --public-url ./"
 	},
 	"author": "",
 	"license": "ISC",
