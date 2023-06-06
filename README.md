@@ -22,6 +22,15 @@ When you click on the cross or backing - disappear.
 The modal window (class popup) should be called
 When you click on the cross or backing - disappear.
 
+## 5. Tabs must be implemented
+
+It also switches the active tab and its style. (class active)
+The user can click on both the inscription and the image
+
+## 7. Implementation of tabs
+
+It also switches the active tab and its style. (class after_click)
+
 ## 10. If the user is on the page for more than 60 seconds
 
 A modal window (popup) should appear.
