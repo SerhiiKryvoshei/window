@@ -13,7 +13,6 @@ const postDate = async (url, data) => {
 		},
 		body: data,
 	});
-
 	return await response.json();
 };
 
@@ -29,7 +28,6 @@ export const forms = () => {
 	const phoneInputs = document.querySelectorAll('input[name="user_phone"]');
 
 	phoneInputs.forEach((item) => {
-		console.log(item);
 		item.addEventListener("input", () => {
 			const regExp = /\D/;
 			item.value = item.value.replace(regExp, "");

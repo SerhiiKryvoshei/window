@@ -36,6 +36,20 @@ All of them should be sent via ajax (without reloading the page) and capture all
 It also switches the active tab and its style. (class active)
 The user can click on both the inscription and the image
 
+## 6. There are [Рассчитать стоимость] buttons inside all the tabs.
+
+When you click on them, a modal window with the popup_calc class should appear.
+
+The main task: when you click on the small previews (4 in a row above), the preview becomes somewhat larger. Below them, the analog image of the active preview is shown. If you select a different one, there will be a similar logic. In the layout, everything is ready - you just need to prescribe the logic.
+
+In the "width" and "height" fields you can only enter numbers.
+When you click on the "Next" button, this modal window is hidden. The popup_calc_profile appears.
+On this window realize that you can only select 1 profile. Either cold or warm.
+When you click the "Next" button, this modal window is hidden. Popup_calc_end appears.
+The requirements here are exactly the same as in the other forms.
+
+BUT! All data that a person has marked or selected must be transmitted with the form.
+
 ## 7. Implementation of tabs
 
 It also switches the active tab and its style. (class after_click)
