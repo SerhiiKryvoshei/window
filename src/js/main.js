@@ -1,5 +1,5 @@
 import "./slider";
-import { modals, tabs } from "./modules/index";
+import { modals, tabs, forms } from "./modules/index";
 
 window.addEventListener("DOMContentLoaded", initApp);
 
@@ -12,4 +12,5 @@ function initApp() {
 		".decoration_content > div > div",
 		"after_click"
 	);
+	forms();
 }

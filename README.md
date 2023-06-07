@@ -22,6 +22,15 @@ When you click on the cross or backing - disappear.
 The modal window (class popup) should be called
 When you click on the cross or backing - disappear.
 
+## 3. Inside all modal windows there is a form
+
+It should be sent via ajax (without reloading the page) and capture all the data entered. It is also necessary to notify the user of the sending status (sending, sent, error). In the field with the phone you can only enter numbers.
+
+## 4. Forms of feedback
+
+There are 6 identical feedback forms on the page.
+All of them should be sent via ajax (without reloading the page) and capture all the data entered. It is also necessary to notify the user of the sending status (sending, sent, error). Only numbers can be entered in the field with the phone.
+
 ## 5. Tabs must be implemented
 
 It also switches the active tab and its style. (class active)
