@@ -1,3 +1,5 @@
+import { checkNumInputs } from "../helpers/index";
+
 const message = {
 	loading: "Загрузка...",
 	success: "Спасибо! Скоро мы с вами свяжемся.",
@@ -25,14 +27,8 @@ const clearInputs = (inputs) => {
 export const forms = () => {
 	const forms = document.querySelectorAll("form");
 	const inputs = document.querySelectorAll("input");
-	const phoneInputs = document.querySelectorAll('input[name="user_phone"]');
 
-	phoneInputs.forEach((item) => {
-		item.addEventListener("input", () => {
-			const regExp = /\D/;
-			item.value = item.value.replace(regExp, "");
-		});
-	});
+	checkNumInputs('input[name="user_phone"]');
 
 	forms.forEach((item) => {
 		item.addEventListener("submit", (e) => {

@@ -1,10 +1,13 @@
 import "./slider";
-import { modals, tabs, forms } from "./modules/index";
+import { modals, tabs, forms, changeModalState } from "./modules/index";
 
 window.addEventListener("DOMContentLoaded", initApp);
 
 function initApp() {
+	let modalState = {};
+
 	modals();
+
 	tabs(
 		".glazing_slider",
 		".glazing_block",
@@ -26,5 +29,8 @@ function initApp() {
 		"do_image_more",
 		"inline-block"
 	);
+
 	forms();
+
+	changeModalState(modalState);
 }
