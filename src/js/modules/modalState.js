@@ -32,11 +32,11 @@ const bindActionsToElements = (elementList, event, prop, state) => {
 //#endregion
 
 export const changeModalState = (state) => {
-	balconyShapes = document.querySelectorAll(".balcon_icons_img");
-	balconyWidth = document.querySelectorAll("#width");
-	balconyHeight = document.querySelectorAll("#height");
-	balconyType = document.querySelectorAll("#view_type");
-	balconyProfile = document.querySelectorAll(".checkbox");
+	const balconyShapes = document.querySelectorAll(".balcon_icons_img");
+	const balconyWidth = document.querySelectorAll("#width");
+	const balconyHeight = document.querySelectorAll("#height");
+	const balconyType = document.querySelectorAll("#view_type");
+	const balconyProfile = document.querySelectorAll(".checkbox");
 
 	checkNumInputs("#width");
 	checkNumInputs("#height");
