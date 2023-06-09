@@ -1128,6 +1128,34 @@ textarea:focus {
 	padding: 1rem 5rem;
 }
 
+/*Ref*/
+*::-webkit-scrollbar {
+	width: 3px;
+}
+
+*::-webkit-scrollbar-track {
+	box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+*::-webkit-scrollbar-thumb {
+	background-color: darkgrey;
+	outline: 1px solid slategrey;
+}
+.faded {
+	animation-name: faded;
+	animation-duration: 1.5s;
+}
+
+@keyframes faded {
+	from {
+		opacity: 0.1;
+	}
+
+	to {
+		opacity: 1;
+	}
+}
+
 /*Media*/
 @media (max-width: 1400px) {
 	.main {
