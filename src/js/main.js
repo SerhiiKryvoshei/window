@@ -1,5 +1,12 @@
 import "./slider";
-import { changeModalState, modals, tabs, forms, timer } from "./modules/index";
+import {
+	changeModalState,
+	modals,
+	tabs,
+	forms,
+	timer,
+	images,
+} from "./modules/index";
 
 window.addEventListener("DOMContentLoaded", initApp);
 
@@ -38,4 +45,6 @@ function initApp() {
 	forms(modalState);
 
 	timer(".container1", deadLine);
+
+	images();
 }
