@@ -24,7 +24,7 @@ const clearInputs = (inputs) => {
 	});
 };
 
-export const forms = () => {
+export const forms = (state) => {
 	const forms = document.querySelectorAll("form");
 	const inputs = document.querySelectorAll("input");
 
@@ -39,10 +39,17 @@ export const forms = () => {
 			item.appendChild(statusMessage);
 
 			const formData = new FormData(item);
+			if (item.getAttribute("data-calc") === "end") {
+				for (let key in state) {
+					formData.append(key, state[key]);
+				}
+			}
+
 			const strJSON = JSON.stringify(Object.fromEntries(formData));
 			postDate("https://jsonplaceholder.typicode.com/posts", strJSON)
 				.then((response) => {
 					statusMessage.textContent = message.success;
+					// console.log(response);
 				})
 				.catch(() => {
 					statusMessage.textContent = message.failure;

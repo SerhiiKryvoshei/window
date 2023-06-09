@@ -8,7 +8,8 @@ Functionality in all modern browsers (Chrome, Firefox, Opera, IE11, Edge, Safari
 
 ## Welcome! 👋
 
-This project already has a connected slider in the form of a ready-made solution. That's all we were able to do. You do not need to touch it. It was left to keep the styles of the original project and support the mobile version. That is where it works.
+This project already has a connected slider in the form of a ready-made solution. That's all we were able to do. You do not need to touch it.
+It was left to keep the styles of the original project and support the mobile version. That is where it works.
 
 ## 1. When you click on this button [Вызвать замерщика]:
 
@@ -40,7 +41,8 @@ The user can click on both the inscription and the image
 
 When you click on them, a modal window with the popup_calc class should appear.
 
-The main task: when you click on the small previews (4 in a row above), the preview becomes somewhat larger. Below them, the analog image of the active preview is shown. If you select a different one, there will be a similar logic. In the layout, everything is ready - you just need to prescribe the logic.
+The main task: when you click on the small previews (4 in a row above), the preview becomes somewhat larger. Below them, the analog image of the active preview is shown.
+If you select a different one, there will be a similar logic. In the layout, everything is ready - you just need to prescribe the logic.
 
 In the "width" and "height" fields you can only enter numbers.
 When you click on the "Next" button, this modal window is hidden. The popup_calc_profile appears.
@@ -53,6 +55,17 @@ BUT! All data that a person has marked or selected must be transmitted with the 
 ## 7. Implementation of tabs
 
 It also switches the active tab and its style. (class after_click)
+
+## 8. Timer implementation
+
+Set any deadline for now.
+
+## 9. When you click on an image
+
+When you click on any of the eight pictures - it opens full screen with a translucent, dark background.
+When you click on the substrate, everything disappears.
+There are a lot of implementation options here. Layout of separate blocks is forbidden.
+Implementation is up to you, but do everything via JS.
 
 ## 10. If the user is on the page for more than 60 seconds
 

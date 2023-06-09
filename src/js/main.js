@@ -1,10 +1,15 @@
 import "./slider";
-import { modals, tabs, forms, changeModalState } from "./modules/index";
+import { changeModalState, modals, tabs, forms, timer } from "./modules/index";
 
 window.addEventListener("DOMContentLoaded", initApp);
 
 function initApp() {
 	let modalState = {};
+
+	const deadLine = new Date();
+	deadLine.setDate(deadLine.getDate() + 3);
+
+	changeModalState(modalState);
 
 	modals();
 
@@ -30,7 +35,7 @@ function initApp() {
 		"inline-block"
 	);
 
-	forms();
+	forms(modalState);
 
-	changeModalState(modalState);
+	timer(".container1", deadLine);
 }

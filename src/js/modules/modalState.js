@@ -12,7 +12,6 @@ const bindActionsToElements = (elementList, event, prop, state) => {
 				case "change":
 					if (prop === "type") state[prop] = item.value;
 					else {
-						console.log(i);
 						i === 0 ? (state[prop] = "Холодное") : (state[prop] = "Теплое");
 						elementList.forEach((elem, j) => {
 							i === j ? (elem.checked = true) : (elem.checked = false);
@@ -24,7 +23,7 @@ const bindActionsToElements = (elementList, event, prop, state) => {
 					break;
 			}
 
-			console.log(state);
+			// console.log(state);
 		});
 	});
 };
